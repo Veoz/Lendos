@@ -1,0 +1,42 @@
+{# Template to print single comment #}
+  {% for w in data.lendos %}
+
+    <div class="new-out">
+
+      <div class="border">
+        <div class="avatar">
+          <img src="{{ base_url }}/sites/default/files/lendos_avatar/{{ w.avatar }}" alt="avatar">
+          <div class="titles">
+            {{ w.name }}
+            {% if is_admin %}
+              <div class="edit">
+                <a href="{{ base_url }}/admin/lendos/edit/{{ w.id }}" class="edit">Edit</a>
+                <a href="{{ base_url }}/admin/lendos/remove/{{ w.id }}" class="remove">Remove</a>
+              </div>
+            {% endif %}
+          </div>
+        </div>
+        <div class="date">{{ w.date }}</div>
+
+        <hr>
+        {% if w.img == 'none' %}
+
+        {% else %}
+          <div class="img">
+            <img src="{{ base_url }}/sites/default/files/lendos_file/{{ w.img }}" class="media-com"
+                 alt="Comment media file">
+          </div>
+        {% endif %}
+        <div class="content"><p class="ppp"> {{ w.text | raw }}</p></div>
+
+        <div class="tell">
+          <p><b>Telephone:</b> {{ w.tell }}</p>
+        </div>
+        <div class="mail">
+          <p><b>E-mail:</b> {{ w.mail }}</p>
+        </div>
+
+      </div>
+    </div>
+  {% endfor %}
+

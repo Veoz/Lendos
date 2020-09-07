@@ -1,0 +1,35 @@
+/*Start Success message*/
+
+
+
+
+.adds form.add-lendos div.ok,div[aria-label="Status message"]{
+  display: flex;
+  justify-content: center;
+  flex-direction: inherit;
+}
+
+form div.ok{
+
+  margin: 15px;
+}
+div.ok div.message p.success, div[aria-label="Status message"]{
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #ffeb00;
+}
+div.ok div.link a.link{
+  text-decoration: none;
+  border: 1px solid #d7e7ce;
+  padding: 10px;
+  background: #b1a5a5;
+  color: #070606;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+div[aria-label="Status message"]{
+max-width: 60%;
+background: #00800070;
+margin: auto;
+border-radius: 10px ;
+}

@@ -1,0 +1,119 @@
+/*add form start*/
+.adds form.add-lendos{
+  max-width: 50%;
+  padding: 0 25% 0;
+}
+.adds form.add-lendos div{
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+
+
+}
+.adds form.add-lendos div label{
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+}
+.adds form.add-lendos div .js-text-format-wrapper{
+  min-width: 100%;
+}
+/* end add form */
+/* start out comments */
+div.about-logo{
+  position: fixed;
+  left: 0;
+}
+div.about-logo a img{
+  width: 200px;
+}
+section.out{
+  display: flex;
+  flex-direction: column;
+}
+
+div.main-title{
+  text-transform: uppercase;
+  position: fixed;
+  left: 0;
+  top: 300px;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 8px;
+}
+
+div.a a{
+  text-decoration: none;
+  color: #b3b2ad;
+  opacity: 0.7;
+}
+li.active{
+  list-style: none;
+  margin: 10px;
+  font-size: 19px;
+  font-weight: 700;
+}
+ul.rer{
+  display: flex;
+  justify-content: center;
+}
+div.new-out{
+  padding: 50px 25% 0 ;
+  clear: both;
+
+}
+div.border{
+  border: 1px solid black;
+  padding: 18px;
+
+}
+div.titles{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px;
+  display: flex;
+}
+div.titles a{
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px;
+  background: #b5b2ad;
+  border-radius: 10%;
+}
+div.titles a.remove {
+  color: #9a2e2e;
+}
+div.titles a.edit{
+  color: #7182bf;
+}
+p.ppp{
+  letter-spacing: 1.5px;
+  line-height: 25px;
+}
+div.avatar{
+  display: flex;
+  justify-content: flex-start;
+}
+div .avatar img{
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+}
+div.date{
+  display: flex;
+  justify-content: flex-end;
+}
+img.media-com{
+  max-width: 400px;
+  max-height: 400px;
+  padding: 15px;
+  float: left;
+}
+div.tell, div.mail{
+  clear: both;
+  padding: 5px 10px ;
+  box-sizing: border-box;
+}
+/*end*/
+

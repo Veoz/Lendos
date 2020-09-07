@@ -1,0 +1,23 @@
+lendos.first_page:
+  path: '/lendos'
+  defaults:
+    _controller: 'Drupal\lendos\Controller\Lendos::get_all'
+    _title: 'Say something!'
+  requirements:
+    _access: 'TRUE'
+lendos.edit_page:
+  path: '/admin/lendos/edit/{id}'
+  defaults:
+    _controller: 'Drupal\lendos\Controller\Edit::edit'
+    _title: 'Edit comment'
+  requirements:
+    _access: 'TRUE'
+    id: \d+
+lendos.remove:
+  path: '/admin/lendos/remove/{id}'
+  defaults:
+    _controller: 'Drupal\lendos\Controller\Remove::remove'
+    _title: 'Remove comment'
+  requirements:
+    _access: 'TRUE'
+    id: \d+

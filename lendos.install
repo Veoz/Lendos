@@ -1,0 +1,62 @@
+<?php
+
+function lendos_schema() {
+
+  $schema['a_lendos'] = [
+    'description' => 'About us database',
+    'fields'      => [
+      'id'   => [
+        'description' => 'ID',
+        'type'        => 'serial',
+        'length'      => 10,
+        'unsigned'    => TRUE,
+        'not null'    => TRUE,
+      ],
+      'name' => [
+        'description' => 'User name',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'mail' => [
+        'description' => 'Contact: E-mail address ',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'tell' => [
+        'description' => 'Contact: telephone',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'text' => [
+        'description' => 'Message to users',
+        'type'        => 'text',
+        'not null'    => TRUE,
+        'size'        => 'big',
+      ],
+      'img'  => [
+        'description' => 'Images',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'avatar'  => [
+        'description' => 'Avatar',
+        'type'        => 'varchar',
+        'length'      => 100,
+        'not null'    => TRUE,
+      ],
+      'date_create' => [
+        'description' => 'Create date',
+        'mysql_type' => 'TIMESTAMP',
+        'length' => 100,
+        'not null' => TRUE
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

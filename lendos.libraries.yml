@@ -1,0 +1,7 @@
+scripts_lendos:
+  version: VERSION
+  css:
+    theme:
+      css/all/style.css: {}
+      css/all/success.css: {}
+      css/all/errors.css: {}

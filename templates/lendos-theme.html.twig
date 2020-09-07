@@ -1,0 +1,22 @@
+{# Main templaaate of Lendos theme #}
+{{ attach_library('lendos/scripts_lendos') }}
+
+{% include'@lendos/lendos-head.html.twig' %}
+<section class="out" >
+  <div class="main-title">{{ data.title }}</div>
+  <div class="errors">
+    <div id="form-system-messages" class="form-system-messages">
+    </div>
+  </div>
+  <div class="adds">{{ add_lendos }}</div>
+
+
+
+  <div id="comment">{% include'@lendos/comments.html.twig' %}</div>
+
+
+</section>
+
+
+
+{% include '@lendos/lendos-footer.html.twig' %}
