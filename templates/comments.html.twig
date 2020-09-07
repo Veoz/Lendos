@@ -5,7 +5,11 @@
 
       <div class="border">
         <div class="avatar">
+        {% if w.avatar == 'default_avatar.png' %}
+           <img src="{{ base_url }}/modules/custom/lendos/default-images/default_avatar.png" alt="avatar">
+        {% else %}
           <img src="{{ base_url }}/sites/default/files/lendos_avatar/{{ w.avatar }}" alt="avatar">
+        {% endif %}
           <div class="titles">
             {{ w.name }}
             {% if is_admin %}
